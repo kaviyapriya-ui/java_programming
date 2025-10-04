@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int bs=s.nextInt();
+        double HRA=(15.0/100)*bs;
+        double DA=(90.0/100)*bs;
+        double gs=bs+HRA+DA;
+        System.out.printf("%.2f",gs);
+    }
+}
