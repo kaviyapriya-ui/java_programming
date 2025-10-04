@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int b=s.nextInt();
+        int c=s.nextInt();
+        int c1=100;
+        int c2=20;
+        int c3=10;
+        System.out.println("Bill Details");
+        System.out.println("No of pizzas:"+a);
+        System.out.println("No of puffs:"+b);
+        System.out.println("No of cooldrinks:"+c);
+        System.out.println("Total price="+((a*c1)+(b*c2)+(c*c3)));
+        System.out.println("ENJOY THE SHOW!!!");
+        
+    }
+}
