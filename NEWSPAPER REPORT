@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int dead=s.nextInt();
+        int injured=s.nextInt();
+        int safe=s.nextInt();
+        System.out.println("TSUNAMI REPORT OF JAPAN");
+        System.out.println("The number of people");
+        System.out.println("1)Dead:"+dead);
+        System.out.println("2)Injured:"+injured);
+        System.out.println("3)Safe:"+safe);
+        System.out.println("Please help the people who are suffering!!!");
+    }
+}
