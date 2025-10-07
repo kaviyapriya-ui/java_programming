@@ -7,8 +7,8 @@ public class Solution {
         Scanner s=new Scanner(System.in);
         int salary=s.nextInt();
         if(salary<15000){
-        float HRA=(15/100.0f)*salary;
-        float DA=(90/100.0f)*salary;
+        float HRA=(float)15/100*salary;
+        float DA=(float)90/100*salary;
             System.out.printf("%.2f",salary+HRA+DA);
         }
         else if(salary>=15000){
