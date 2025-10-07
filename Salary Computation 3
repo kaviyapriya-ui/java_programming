@@ -1,15 +1,20 @@
 import java.io.*;
 import java.util.*;
-import java.lang.*;
 
 public class Solution {
 
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
-        int bs=s.nextInt();
-        double HRA=(15.0/100)*bs;
-        double DA=(90.0/100)*bs;
-        double gs=bs+HRA+DA;
-        System.out.printf("%.2f",gs);
+        int salary=s.nextInt();
+        if(salary<15000){
+        float HRA=(15/100.0f)*salary;
+        float DA=(90/100.0f)*salary;
+            System.out.printf("%.2f",salary+HRA+DA);
+        }
+        else if(salary>=15000){
+            int HRA1=5000;
+            int DA1=(98/100)*salary;
+            System.out.printf("%.2f",salary+HRA1+DA1);
+        }
     }
 }
