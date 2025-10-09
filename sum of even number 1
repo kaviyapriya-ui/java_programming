@@ -6,18 +6,17 @@ public class Solution{
         int n=s.nextInt();
         int m=s.nextInt();
         int sum=0;
-        if((n>0 && n<30)&&(m>0 && m<30)){
-            if(n<m){
+        if((n>0 && n<30)&&(m>0 && m<30) && (n<m)){
             for(int i=n;i<=m;i++){
                 if(i%2==0){
                     sum+=i;
                 }
             }
             System.out.println(sum);
+            
         }
             else{
              System.out.println("Invalid Input");
             }
-        }
     }
 }
