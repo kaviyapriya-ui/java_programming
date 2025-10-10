@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+    int n=s.nextInt();
+    int a[]=new int[n];
+    for(int i=0;i<n;i++){
+        a[i]=s.nextInt();
+    }
+    for(int i=0;i<n;i++){
+        if(n<0 || a[i]<0){
+            System.out.println("Invalid Input");
+            break;
+        }
+    }
+    int young=a[0];
+    for(int i=0;i<n;i++){
+        if(a[i]<young){
+            young=a[i];
+        }
+    }
+    System.out.println("Youngest="+young);
+    int old=a[0];
+    for(int i=0;i<n;i++){
+        if(a[i]>old){
+            old=a[i];
+        }
+    }
+    System.out.println("Oldest="+old);
+}
+}
