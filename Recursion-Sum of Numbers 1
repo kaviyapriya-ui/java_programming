@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    static int Sum(int n){
+        if(n==1){
+            return 1;
+        }
+            return n+Sum(n-1);
+    }
+public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+    int n=s.nextInt();
+    if(n>=1 && n<=50){
+        int s1=Sum(n);
+        System.out.printf("The sum of numbers from 1 to "+n+" : %04d",s1);
+    }
+    else{
+        System.out.println("Enter a Valid Input!!!!!!!!!!!!!!!!!!");
+    }
+    }
+}
