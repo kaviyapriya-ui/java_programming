@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    static int Count_no(int a){
+        if(a!=0){
+            return 1+Count_no(a/10);
+        }
+        else
+            return 0;
+}
+public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+    int n=s.nextInt();
+    System.out.println("The Count the digits: "+Count_no(n));
+    }
+}
